@@ -1,0 +1,156 @@
+@import "font-awesome";
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: #f0f5f5;
+  color: #666666;
+  font-family: open sans;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+form {
+  height: auto;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+form fieldset{
+  text-align: left;
+  border: none;
+  padding-left: 13%;
+}
+
+form legend {
+  width: auto;
+  color: #00b359;
+  margin: 40px auto 20px 30%;
+  font-size: 35px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+form legend span {
+  color: #666666;
+  font-weight: 600;
+}
+
+form input {
+  width: 80%;
+  height: 28px;
+  border: 1px solid #bfbfbf;
+  border-radius: 3px;
+  color: #666666;
+}
+
+form input[type="number"]::-webkit-outer-spin-button,
+form input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+form label {
+  display: block;
+  width: 80%;
+  margin: 15px 0 15px 0;
+}
+
+.container {
+  width: 1000px;
+  height: auto;
+  background: white;
+}
+
+.star-container {
+  width: 80.5%;
+  height: 18px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.star-container i,
+.edit-icon,
+.delete-icon {
+  color: #bfbfbf;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px 0 0;
+}
+
+.submit,
+.edit-book {
+  width: 80.5%;
+  height: 40px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  background: #00b359;
+  margin: 20px 0 20px 0;
+}
+
+.book-container {
+  height: auto;
+  width:80.5%;
+  padding: 25px 0 25px 0;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.book-info,
+.book-info-header {
+  width: calc(25% - 9px);
+  height: auto;
+  padding: 8px 0 8px 8px;
+  font-weight: 300;
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0 10px 0;
+  border-right: 1px solid #bfbfbf;
+}
+
+.book-row,
+.header-row {
+  border-top: 1px solid #bfbfbf;
+  border-bottom: 1px solid #bfbfbf;
+  width:auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  background: #f0f5f5;
+}
+
+.header-row {
+  background: inherit;
+}
+
+.book-info-header {
+  font-weight: 600;
+}
+
+.star-container i:hover,
+.edit-icon:hover,
+.delete-icon:hover{
+  color: gray;
+}
+
+.submit:hover,
+.edit-book:hover {
+  background: #008040;
+  color: #ffffb3;
+}
+
+.edit-icon,
+.delete-icon {
+  align-self: center;
+  margin: 0 15px 0 0;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Booklist</title>
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <form>
+          <fieldset>
+            <legend>Book<span>list</span></legend>
+            <label for="title">Title:</label>
+            <input type="text" name="title"></input>
+            <label for="author">Author:</label>
+            <input type="text" name="author"></input>
+            <label for="total">Total pages:</label>
+            <input type="number" name="total"></input>
+            <label for="read">Pages already read:</label>
+            <input type="number" name="read"></input>
+
+            <label>Rating:</label>
+
+            <div class="star-container">
+
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+
+            </div>
+
+            <input class="submit" type="button" name="submit" value="Submit"></input>
+            <input class="edit-book" type="hidden" name="edit-book" value="Edit book"></input>
+            <div class="book-container">
+            </div>
+          </fieldset>
+      </form>
+    </div>
+    <script type="text/javascript" src="js.js"></script>
+  </body>
+</html>
